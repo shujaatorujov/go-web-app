@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Wisdom & Transport</title>
+</head>
+<body>
+
+<ul>
+    {{$items :=.}}
+    {{range $ws :=$items.Wisdom}}
+    <li>{{$ws.Name}} - {{$ws.Motto}}</li>
+    {{end}}
+</ul>
+
+<ul>
+    {{range $tr :=$items.Transport}}
+    <li>{{$tr.Manufacturer}} - {{$tr.Model}} - {{$tr.Doors}}</li>
+    {{end}}
+</ul>
+
+</body>
+</html>
